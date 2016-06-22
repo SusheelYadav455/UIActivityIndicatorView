@@ -17,6 +17,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    [self.view setBackgroundColor:[UIColor blackColor]];
+    
+    UIActivityIndicatorView *spinner = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+    [spinner setCenter:CGPointMake(200, 500)];
+    [spinner startAnimating];
+    spinner.color = [UIColor greenColor];
+    [self.view addSubview:spinner];
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
